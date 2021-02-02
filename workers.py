@@ -15,7 +15,7 @@ class Workers:
                 print('Ошибка ввода, повторите попытку')
                 continue
 
-            choice = input('Вы желаете записать еще (1 = да,все остальное - нет)?  ')
+            choice = input('Вы желаете записать еще (да - 1 , нет  - 2)?  ')
             if choice != '1':
                 flag = False
 
@@ -62,7 +62,7 @@ class Workers:
         if len(self.__workers_list) == 0:
             print('В списке нет записей')
         else:
-            count = 0
+            count = 1
             for i in self.__workers_list.keys():
                 print(f'{count}) {i} -- {self.__workers_list[i]} р. за рейс')
                 count += 1
